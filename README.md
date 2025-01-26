@@ -1,6 +1,6 @@
-## Update
+## Final Update Before Overview
 I am able to fix one animation bug which was pending in earlier commit 
-The issue was slide and rotate of main container was working fine but drawer container was not moving down, I have decribed more details in this PR https://github.com/Ankitminhas589/Gerald/pull/2
+The issue was slide and rotate of main container was working fine but drawer container was not moving down, I have decribed more details in this PR & Other sections in the Readme https://github.com/Ankitminhas589/Gerald/pull/2
 
 Attaching Final Recording here
 
