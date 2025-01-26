@@ -19,3 +19,9 @@ TypeScript: The app is written in TypeScript for type safety and code scalabilit
 - **Platform**: The assignment was tested only on iOS due to time constraints.
 - **Fonts**: The app doesn’t currently implement responsive design, though ideally, scalable fonts should be used for better accessibility and consistency across different devices.
 - **Drawer Animation down**: The animation where the drawer moves down is not implemented yet but slide and rotate is working. The issue arises from not being able to access the drawer progress value outside the DrawerNavigator. I Plan to find a ideal solution for accessing the drawer’s progress to implement the animation feature soon.
+
+
+## Recording:
+
+https://github.com/user-attachments/assets/7cf7bc15-5d7a-44b4-81b0-28517f738359
+
