@@ -1,10 +1,11 @@
-import { useDrawerProgress } from '@react-navigation/drawer';
-import React from 'react';
+import { useDrawerProgress, useDrawerStatus } from '@react-navigation/drawer';
+import React, { useContext, useEffect } from 'react';
 import { StyleSheet, useWindowDimensions } from 'react-native';
 import Animated, {
   interpolate,
   useAnimatedStyle,
 } from 'react-native-reanimated';
+import { DrawerProgressContext } from '../navigation/Context/DrawerProgressContext';
 
 type Props = {
   children: React.ReactNode;
@@ -12,6 +13,12 @@ type Props = {
 const AnimationWrapper = ({ children }: Props) => {
   const progress = useDrawerProgress();
   const { width } = useWindowDimensions();
+  const { setDrawerState } = useContext(DrawerProgressContext);
+  const isDrawerOpen = useDrawerStatus() === 'open';
+
+  useEffect(() => {
+    setDrawerState(isDrawerOpen);
+  }, [isDrawerOpen]);
 
   const animatedStyle = useAnimatedStyle(() => {
     const rotation = `${interpolate(progress.value, [0, 1], [0, -10])}deg`;
