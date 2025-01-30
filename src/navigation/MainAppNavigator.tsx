@@ -54,6 +54,7 @@ const MainAppNavigator = () => {
         [0, 30],
         'clamp',
       ),
+      overflow: 'hidden',
     };
   });
 
